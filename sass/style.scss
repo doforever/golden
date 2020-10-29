@@ -4,9 +4,28 @@ $font-brand: 'Wisdom Script Regular';
 $font-welcome: "Droid Serif";
 $font-header: 'Montserrat', sans-serif;
 $font-text: 'Roboto Slab', serif;
+$color-text: #777777;
+$color-header: #222222;
+$color-t-light: #ffffff;
 
 // General
 
 body {
-    
+    margin: 0;
+    font-family: $font-text;
+    font-size: 14px;
+    color: $color-text;
 }
+
+h1 {
+    font-family: $font-header;
+    color: $color-header;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: $font-welcome;
+    font-size: 16px;
+    font-style: italic;
+}
+
