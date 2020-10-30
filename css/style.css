@@ -5,6 +5,11 @@ body {
   font-family: "Roboto Slab", serif;
   font-size: 14px;
   color: #777777;
+  text-align: center;
+}
+
+section {
+  padding: 120px 0;
 }
 
 h1 {
@@ -13,6 +18,7 @@ h1 {
   font-size: 40px;
   text-transform: uppercase;
   letter-spacing: -1px;
+  margin: 0;
 }
 
 h2 {
@@ -20,6 +26,12 @@ h2 {
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
+}
+
+h3 {
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
 }
 
 .container {
@@ -105,7 +117,6 @@ header h2 {
 header h1 {
   font-size: 75px;
   letter-spacing: -1.88px;
-  margin-top: 20px;
 }
 
 header .btn {
@@ -122,9 +133,33 @@ header .btn {
   font-weight: 700;
   font-size: 18px;
   border-radius: 4px;
+  margin-top: 60px;
 }
 
 header .btn:hover {
   background-color: #f8c611;
+}
+
+/* Services */
+.services h2 {
+  margin-bottom: 60px;
+}
+
+.services p {
+  letter-spacing: -0.35px;
+}
+
+.services .picture {
+  border: 3px solid #fed136;
+  height: 68px;
+  width: 68px;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 68px;
+}
+
+.services .picture img {
+  line-height: 68px;
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */

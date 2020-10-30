@@ -17,6 +17,11 @@ body {
     font-family: $font-text;
     font-size: 14px;
     color: $color-text;
+    text-align: center;
+}
+
+section {
+    padding: 120px 0;
 }
 
 h1 {
@@ -25,6 +30,7 @@ h1 {
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: -1px;
+    margin: 0;
 }
 
 h2 {
@@ -33,6 +39,13 @@ h2 {
     font-style: italic;
     font-weight: 400;
 }
+
+h3 {
+    color: $color-header;
+    font-family: $font-header;
+    font-size: 18px;
+}
+
 .container {
     max-width: 941px;
 }
@@ -99,7 +112,6 @@ header {
     h1 {
         font-size: 75px;
         letter-spacing: -1.88px;
-        margin-top: 20px;
     }
     .btn {
         display: inline-block;
@@ -115,8 +127,32 @@ header {
         font-weight: 700;
         font-size: 18px;
         border-radius: 4px;
+        margin-top: 60px;
         &:hover {
             background-color: $color-main-d;
         }
     }   
+}
+
+/* Services */
+
+.services {
+    h2{
+        margin-bottom: 60px;
+    }
+    p {
+        letter-spacing: -0.35px;
+    }
+    .picture {
+        border: 3px solid $color-main;
+        height: 68px;
+        width: 68px;
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 68px;
+        img {
+            line-height: 68px; 
+            padding: 10px;
+        }
+    }
 }
