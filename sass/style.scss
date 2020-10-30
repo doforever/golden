@@ -1,4 +1,4 @@
-// Variables
+/* Variables */
     
 $font-brand: 'Wisdom Script Regular';
 $font-welcome: "Droid Serif";
@@ -7,8 +7,10 @@ $font-text: 'Roboto Slab', serif;
 $color-text: #777777;
 $color-header: #222222;
 $color-t-light: #ffffff;
+$color-main: #fed136;
+$color-main-d: #f8c611;
 
-// General
+/* General */
 
 body {
     margin: 0;
@@ -21,11 +23,98 @@ h1 {
     font-family: $font-header;
     color: $color-header;
     font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
 }
 
 h2 {
     font-family: $font-welcome;
     font-size: 16px;
     font-style: italic;
+    font-weight: 400;
+}
+.container {
+    max-width: 941px;
 }
 
+/* Header */
+
+header {
+    background-image: url('../images/Background_Image.png');
+    background-position: center center;
+    background-size: cover;
+    color: $color-t-light;
+    .container {
+        min-height: 729px;
+        display: flex;
+        flex-direction: column;
+    }
+    nav.row {
+        padding-top: 73px;
+        flex: 0 0 auto;
+        i.fas {
+            display: none;
+        }
+        .brand {
+            color: $color-main;
+            font-family: $font-brand;
+            font-size: 26px;
+            text-decoration: none;
+            line-height: 41px;        
+        }
+        .menu {
+            text-align: right;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            display: inline-block;
+            margin: 0 0 0 40px;
+            text-transform: uppercase;
+            font-family: $font-header;
+            line-height: 41px;
+        }
+    }    
+    div.row {
+        flex: 1;
+        display: flex;
+        align-content: center;
+        padding-bottom: 20px;
+    }    
+    .welcome-mes {        
+        text-align: center;
+        
+    }   
+    h1, h2 {
+        color: $color-t-light;
+    }
+    h2 {
+        font-size: 40px;
+        letter-spacing: -1px;
+    }
+    h1 {
+        font-size: 75px;
+        letter-spacing: -1.88px;
+    }
+    .btn {
+        display: inline-block;
+        width: 240px;
+        height: 65px;
+        background-color: $color-main;
+        text-align: center;
+        line-height: 65px;
+        color: $color-t-light;
+        font-family: $font-header;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        border-radius: 4px;
+        &:hover {
+            background-color: $color-main-d;
+        }
+    }   
+}

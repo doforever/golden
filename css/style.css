@@ -1,3 +1,5 @@
+/* Variables */
+/* General */
 body {
   margin: 0;
   font-family: "Roboto Slab", serif;
@@ -9,11 +11,118 @@ h1 {
   font-family: "Montserrat", sans-serif;
   color: #222222;
   font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
 }
 
 h2 {
   font-family: "Droid Serif";
   font-size: 16px;
   font-style: italic;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 941px;
+}
+
+/* Header */
+header {
+  background-image: url("../images/Background_Image.png");
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+header .container {
+  min-height: 729px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+header nav.row {
+  padding-top: 73px;
+  -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+}
+
+header nav.row i.fas {
+  display: none;
+}
+
+header nav.row .brand {
+  color: #fed136;
+  font-family: "Wisdom Script Regular";
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 41px;
+}
+
+header nav.row .menu {
+  text-align: right;
+}
+
+header nav.row ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav.row li {
+  display: inline-block;
+  margin: 0 0 0 40px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  line-height: 41px;
+}
+
+header div.row {
+  -ms-flex: 1;
+      flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-bottom: 20px;
+}
+
+header .welcome-mes {
+  text-align: center;
+}
+
+header h1, header h2 {
+  color: #ffffff;
+}
+
+header h2 {
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+
+header h1 {
+  font-size: 75px;
+  letter-spacing: -1.88px;
+}
+
+header .btn {
+  display: inline-block;
+  width: 240px;
+  height: 65px;
+  background-color: #fed136;
+  text-align: center;
+  line-height: 65px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+header .btn:hover {
+  background-color: #f8c611;
 }
 /*# sourceMappingURL=style.css.map */
