@@ -9,6 +9,7 @@ $color-header: #222222;
 $color-t-light: #ffffff;
 $color-main: #fed136;
 $color-main-d: #f8c611;
+$color-bcg-alt: #f7f7f7;
 
 /* General */
 
@@ -154,5 +155,30 @@ header {
             line-height: 68px; 
             padding: 10px;
         }
+    }
+}
+
+/* Portfolio */
+
+.portfolio {
+    background-color: $color-bcg-alt;
+    h2 {
+        margin-bottom: 76px;
+    }
+    h3 {
+        letter-spacing: -0.45px;
+        padding: 29px 0 0 0;
+        margin: 0;
+    }
+    p {
+        margin: 0;
+        padding: 0 0 27px 0;
+    }
+    figure {
+        margin: 25px 0;
+        background-color: $color-t-light;
+    }
+    img {
+        width: 100%;
     }
 }

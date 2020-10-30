@@ -162,4 +162,33 @@ header .btn:hover {
   line-height: 68px;
   padding: 10px;
 }
+
+/* Portfolio */
+.portfolio {
+  background-color: #f7f7f7;
+}
+
+.portfolio h2 {
+  margin-bottom: 76px;
+}
+
+.portfolio h3 {
+  letter-spacing: -0.45px;
+  padding: 29px 0 0 0;
+  margin: 0;
+}
+
+.portfolio p {
+  margin: 0;
+  padding: 0 0 27px 0;
+}
+
+.portfolio figure {
+  margin: 25px 0;
+  background-color: #ffffff;
+}
+
+.portfolio img {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
