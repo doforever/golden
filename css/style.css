@@ -66,6 +66,7 @@ header nav.row i.fas {
   display: none;
   font-size: 24px;
   line-height: 41px;
+  margin-left: 12px;
 }
 
 header nav.row div:first-child {
@@ -82,7 +83,10 @@ header nav.row .brand {
 
 header nav.row .menu {
   text-align: right;
-  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 header nav.row ul {
@@ -101,6 +105,7 @@ header nav.row li {
 
 header nav.row li:hover {
   color: #fed136;
+  cursor: pointer;
 }
 
 header div.row {
@@ -284,17 +289,18 @@ footer i::before {
     display: none;
   }
   header nav.row i.fas {
-    display: inline;
+    display: inline-block;
   }
   nav.row:hover ul {
-    display: block;
-    position: relative;
-    right: 140px;
-    top: -40px;
-    margin-bottom: -1450px;
+    display: inline-block;
+    margin-bottom: -150px;
+    text-align: right;
   }
   nav.row:hover ul li {
     line-height: 30px;
+    display: block;
+    background-color: #22222252;
+    padding: 0 10px;
   }
   nav.row:hover i.fas {
     color: #fed136;

@@ -11,6 +11,7 @@ $color-t-dark: #555555;
 $color-main: #fed136;
 $color-main-d: #f8c611;
 $color-bcg-alt: #f7f7f7;
+$color-menu: #22222252;
 
 /* General */
 
@@ -72,6 +73,7 @@ header {
             display: none;
             font-size: 24px;
             line-height: 41px;
+            margin-left: 12px;     
         }
         div:first-child {
             text-align: left;
@@ -85,7 +87,8 @@ header {
         }
         .menu {
             text-align: right;
-            position: relative;
+            display: flex;
+            justify-content: flex-end;
         }
         ul {
             list-style: none;
@@ -100,6 +103,7 @@ header {
             line-height: 41px;
             &:hover {
                 color: $color-main;
+                cursor: pointer;
             }
         }
     }    
@@ -267,20 +271,21 @@ footer {
                 display: none;
             }
             i.fas {
-                display: inline;             
+                display: inline-block;             
             }
 
         }
     }
     nav.row:hover {
         ul {
-            display: block;
-            position: relative;
-            right: 140px;
-            top: -40px;
-            margin-bottom: -1450px;
+            display: inline-block;
+            margin-bottom: -150px;
+            text-align: right;
             li {
                 line-height: 30px;
+                display: block;
+                background-color: $color-menu;
+                padding: 0 10px;
             }
         }
         i.fas {
