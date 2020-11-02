@@ -99,6 +99,10 @@ header nav.row li {
   line-height: 41px;
 }
 
+header nav.row li:hover {
+  color: #fed136;
+}
+
 header div.row {
   -ms-flex: 1;
       flex: 1;
@@ -291,9 +295,6 @@ footer i::before {
   }
   nav.row:hover ul li {
     line-height: 30px;
-  }
-  nav.row:hover ul li:hover {
-    color: #fed136;
   }
   nav.row:hover i.fas {
     color: #fed136;

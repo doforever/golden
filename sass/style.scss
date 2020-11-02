@@ -98,6 +98,9 @@ header {
             text-transform: uppercase;
             font-family: $font-header;
             line-height: 41px;
+            &:hover {
+                color: $color-main;
+            }
         }
     }    
     div.row {
@@ -278,9 +281,6 @@ footer {
             margin-bottom: -1450px;
             li {
                 line-height: 30px;
-                &:hover {
-                    color: $color-main;
-                }
             }
         }
         i.fas {
