@@ -82,6 +82,7 @@ header nav.row .brand {
 
 header nav.row .menu {
   text-align: right;
+  position: relative;
 }
 
 header nav.row ul {
@@ -275,17 +276,39 @@ footer i::before {
   header h2 {
     font-size: 32px;
   }
-  header nav.row .menu ul {
+  header nav.row ul {
     display: none;
   }
   header nav.row i.fas {
     display: inline;
   }
-  header nav.row i.fas:hover {
+  nav.row:hover ul {
+    display: block;
+    position: relative;
+    right: 140px;
+    top: -40px;
+    margin-bottom: -1450px;
+  }
+  nav.row:hover ul li {
+    line-height: 30px;
+  }
+  nav.row:hover ul li:hover {
+    color: #fed136;
+  }
+  nav.row:hover i.fas {
     color: #fed136;
   }
   .portfolio h2 {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 340px) {
+  header h1 {
+    font-size: 32px;
+  }
+  header h2 {
+    font-size: 28px;
   }
 }
 /*# sourceMappingURL=style.css.map */

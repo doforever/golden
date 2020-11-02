@@ -85,6 +85,7 @@ header {
         }
         .menu {
             text-align: right;
+            position: relative;
         }
         ul {
             list-style: none;
@@ -259,23 +260,47 @@ footer {
             font-size: 32px;
         }
         nav.row {
-            .menu {
-                ul {
-                    display: none;
-                }
+            ul {
+                display: none;
             }
             i.fas {
-                display: inline;
+                display: inline;             
+            }
+
+        }
+    }
+    nav.row:hover {
+        ul {
+            display: block;
+            position: relative;
+            right: 140px;
+            top: -40px;
+            margin-bottom: -1450px;
+            li {
+                line-height: 30px;
                 &:hover {
                     color: $color-main;
                 }
             }
-
+        }
+        i.fas {
+            color: $color-main;
         }
     }
     .portfolio {
         h2 {
             margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    header {
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 28px;
         }
     }
 }
