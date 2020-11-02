@@ -69,6 +69,10 @@ header {
         padding-top: 73px;
         flex: 0 0 auto;
         justify-content: space-between;
+        &>div {
+            padding: 0 15px;
+            flex: 0 0 auto;
+        }
         i.fas {
             display: none;
             font-size: 24px;
@@ -89,6 +93,7 @@ header {
             text-align: right;
             display: flex;
             justify-content: flex-end;
+            flex: 0 0 auto;
         }
         ul {
             list-style: none;
@@ -267,6 +272,9 @@ footer {
             font-size: 32px;
         }
         nav.row {
+            .menu {
+                width: auto;
+            }
             ul {
                 display: none;
             }
@@ -276,7 +284,7 @@ footer {
 
         }
     }
-    nav.row:hover {
+    .menu:hover {
         ul {
             display: inline-block;
             margin-bottom: -150px;
