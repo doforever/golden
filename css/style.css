@@ -191,4 +191,65 @@ header .btn:hover {
 .portfolio img {
   width: 100%;
 }
+
+/* Footer */
+footer .container {
+  height: 121px;
+}
+
+footer .row {
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+footer .row > div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+footer .row > div:nth-child(2) {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+footer p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.35px;
+  color: #555555;
+}
+
+footer ul {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin: 4px;
+  font-size: 0;
+}
+
+footer i {
+  font-size: 18px;
+  background-color: #222222;
+  border-radius: 50%;
+  color: #ffffff;
+  text-decoration: none;
+  width: 41px;
+  height: 40px;
+}
+
+footer i:hover {
+  background-color: black;
+}
+
+footer i::before {
+  line-height: 40px;
+}
 /*# sourceMappingURL=style.css.map */

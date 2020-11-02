@@ -7,6 +7,7 @@ $font-text: 'Roboto Slab', serif;
 $color-text: #777777;
 $color-header: #222222;
 $color-t-light: #ffffff;
+$color-t-dark: #555555;
 $color-main: #fed136;
 $color-main-d: #f8c611;
 $color-bcg-alt: #f7f7f7;
@@ -180,5 +181,57 @@ header {
     }
     img {
         width: 100%;
+    }
+}
+
+/* Footer */
+
+footer {
+    .container {
+        height: 121px;
+    }
+    .row {
+        height: 100%;
+        align-content: center;
+        &>div{
+            display: flex;
+            align-items: center;
+        }
+        &>div:nth-child(2) {
+            justify-content: center;
+        }
+    }
+    p {
+        font-family: $font-header;
+        font-size: 14px;
+        letter-spacing: -0.35px;
+        color: $color-t-dark;
+        
+    }
+    ul {
+        display: inline-block;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        display: inline-block;
+        margin: 4px;
+        font-size: 0;
+    }
+    i {
+        font-size: 18px;
+        background-color: $color-header;
+        border-radius: 50%;
+        color: $color-t-light;
+        text-decoration: none;
+        width: 41px;
+        height: 40px;
+        &:hover{
+            background-color: black;
+        }
+        &::before {
+            line-height: 40px;
+        }
     }
 }
