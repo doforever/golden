@@ -58,10 +58,18 @@ header nav.row {
   padding-top: 73px;
   -ms-flex: 0 0 auto;
       flex: 0 0 auto;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 header nav.row i.fas {
   display: none;
+  font-size: 24px;
+  line-height: 41px;
+}
+
+header nav.row div:first-child {
+  text-align: left;
 }
 
 header nav.row .brand {
@@ -251,5 +259,33 @@ footer i:hover {
 
 footer i::before {
   line-height: 40px;
+}
+
+/* Media */
+@media (max-width: 767px) {
+  section {
+    padding: 60px 0;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 32px;
+  }
+  header nav.row .menu ul {
+    display: none;
+  }
+  header nav.row i.fas {
+    display: inline;
+  }
+  header nav.row i.fas:hover {
+    color: #fed136;
+  }
+  .portfolio h2 {
+    margin-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
