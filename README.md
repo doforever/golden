@@ -3,7 +3,7 @@ HTML page with css compiled from sass. \
 Uses Bootstrap grid.
 
 ## Published on github pages
-https://doforever.github.io/landing-tr/
+https://doforever.github.io/golden/
 
 ## Initializing project
 1. `npm install`
