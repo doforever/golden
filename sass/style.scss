@@ -103,12 +103,17 @@ header {
         li {
             display: inline-block;
             margin: 0 0 0 40px;
-            text-transform: uppercase;
-            font-family: $font-header;
-            line-height: 41px;
-            &:hover {
-                color: $color-main;
-                cursor: pointer;
+
+            a {
+                text-transform: uppercase;
+                font-family: $font-header;
+                line-height: 41px;
+                text-decoration: none;
+                color: inherit;
+                &:hover {
+                    color: $color-main;
+                    cursor: pointer;
+                }
             }
         }
     }    
